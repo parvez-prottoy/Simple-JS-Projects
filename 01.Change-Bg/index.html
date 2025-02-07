@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Change Bg</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body style="transition: 1s cubic-bezier(0.215, 0.61, 0.355, 1)">
+    <section class="flex justify-center items-center h-screen">
+      <div class="text-center">
+        <div class="flex justify-between space-x-4 border">
+          <h1 id="code" class="text-4xl">#00000</h1>
+          <button
+            id="copy"
+            class="bg-black/50 hover:bg-black/30 delay-75 px-4 text-white"
+          >
+            Copy Code
+          </button>
+        </div>
+        <button
+          id="generate"
+          class="bg-black/90 text-white px-4 py-4 text-xl font-semibold rounded-md hover:bg-black/60 delay-75 mt-4"
+        >
+          Color Generate
+        </button>
+      </div>
+    </section>
+    <!-- js -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
