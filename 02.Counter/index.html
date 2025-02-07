@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Counter</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-black/90">
+    <section>
+      <div
+        class="container px-2 mx-auto h-screen flex justify-center items-center"
+      >
+        <div
+          id="counter"
+          class="text-white text-center w-[90] sm:w-[80%] md:w-[60%] lg:w-[30%] border p-10 rounded-lg space-y-6"
+        >
+          <h1 id="counter-text" class="text-8xl"></h1>
+          <div class="flex justify-between">
+            <button
+              id="decrement-btn"
+              class="bg-red-600 hover:bg-red-600/50 text-xl font-semibold px-8 py-2 rounded-md"
+            >
+              Decrement
+            </button>
+            <button
+              id="increment-btn"
+              class="bg-green-600 hover:bg-green-600/50 text-xl font-semibold px-8 py-2 rounded-md delay-75"
+            >
+              Increment
+            </button>
+          </div>
+          <div class="flex justify-between">
+            <button
+              id="reset-btn"
+              class="bg-yellow-600 hover:bg-yellow-600/50 text-xl font-semibold px-8 py-2 rounded-md delay-75"
+            >
+              Reset
+            </button>
+            <button
+              id="save-btn"
+              class="bg-indigo-600 hover:bg-indigo-600/50 text-xl font-semibold px-8 py-2 rounded-md delay-75"
+            >
+              Save
+            </button>
+          </div>
+          <div>
+            <h4 class="text-2xl border-b-2">Saved</h4>
+            <p id="saved-count" class="text-xl mt-2">No Data Saved</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- js -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
